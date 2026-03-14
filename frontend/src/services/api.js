@@ -9,7 +9,7 @@ const API = axios.create({
 export const createJournal = (data) => API.post("/api/journal", data);
 
 export const getEntries = (userId) =>
-  API.get(`/journal/${userId}`);
+  API.get(`/api/journal/${userId}`);
 
 export const getInsights = (userId) =>
-  API.get(`/journal/insights/${userId}`);
+  API.get(`/api/journal/insights/${userId}`);
